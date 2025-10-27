@@ -55,12 +55,12 @@
 }
 
 @layer base {
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-    }
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+  }
 }
 
 @utility visit{
