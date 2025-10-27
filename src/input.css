@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+    --color-primary: #29AB87;
+    --color-secondary: #FFD858;
+    --color-primary-text: #232323;
+    --color-secondary-text: #5B5B5B;
+    --color-hover-text: #8E8E8E;
+    --color-green: #458271;
+    --color-background: #0C2E37;
+
+    --font-sf-extralight: 'SF Pro Display Extralight', sans-serif;
+    --font-sf-light: 'SF Pro Display Light', sans-serif;
+    --font-sf-regular: 'SF Pro Display', sans-serif;
+    --font-sf-medium: 'SF Pro Display Medium', sans-serif;
+    --font-sf-semibold: 'SF Pro Display Semibold', sans-serif;
+    --font-sf-bold: 'SF Pro Display Bold', sans-serif;
+    --font-sf-black: 'SF Pro Display Black', sans-serif;
+}
+
+@font-face {
+  font-family: 'SF Pro Display Extralight';
+  src: url('../assets/fonts/SF-Pro-Display-Ultralight.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Light';
+  src: url('../assets/fonts/SF-Pro-Display-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../assets/fonts/SF-Pro-Display-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Medium';
+  src: url('../assets/fonts/SF-Pro-Display-Medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Semibold';
+  src: url('../assets/fonts/SF-Pro-Display-Semibold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Bold';
+  src: url('../assets/fonts/SF-Pro-Display-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Black';
+  src: url('../assets/fonts/SF-Pro-Display-Black.otf') format('truetype');
+}
+
+@layer base {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+}
+
+@utility visit{
+  color: var(--color-primary-text);
+  font-family: "SF Pro Display semibold";
+}
+
+@utility unvisit{
+  color: var(--color-hover-text);
+  font-family: "SF Pro Display";
+}

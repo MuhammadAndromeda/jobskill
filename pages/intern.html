@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBSKILL - Wujudkan Indonesia Emas dengan Keterampilan Digital.</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+</head>
+<body class="font-sf-regular relative w-full h-auto overflow-x-hidden">
+    <header class="w-full h-auto bg-none fixed flex justify-center items-start z-20">
+        <nav class="w-full py-5 px-25 bg-background shadow-sm shadow-white/20 flex justify-between items-center">
+            <a href="#" class="text-white text-left text-2xl font-sf-black uppercase gap-0.5 flex justify-start items-center">
+                <img src="../assets/images/jobskill-icon.svg" alt="jobskill-icon" class="w-4 h-auto max-w-full">
+                obskill
+            </a>
+
+            <div class="gap-6 flex justify-center items-center">
+                <a href="../index.html" class="text-gray-300 text-lg text-center font-sf-medium capitalize tracking-wider">beranda</a>
+                <a href="#" class="text-gray-300 text-lg text-center font-sf-medium capitalize tracking-wider">belajar</a>
+                <a href="#" class="text-gray-300 text-lg text-center font-sf-medium capitalize tracking-wider">portfolio</a>
+                <a href="#" class="text-white text-lg text-center font-sf-medium capitalize tracking-wider">cari proyek</a>
+                <a href="#" class="text-gray-300 text-lg text-center font-sf-medium capitalize tracking-wider">tentang kami</a>
+            </div>
+
+            <div class="gap-4 flex justify-center items-center">
+                <a href="#" class="py-2 px-7 bg-transparent hover:bg-white rounded-lg border-2 border-transparent hover:border-white text-gray-300 hover:text-background text-center text-lg font-sf-medium tracking-wider capitalize transition-all duration-300">daftar</a>
+                <a href="#" class="py-2 px-7 bg-primary hover:bg-transparent rounded-lg border-2 border-primary text-white hover:text-primary text-center text-lg font-sf-medium tracking-wider capitalize transition-all duration-300">masuk</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="w-full h-auto mb-30 flex flex-col justify-center items-center">
+        <section class="w-full pt-50 pb-20 px-25 bg-background gap-12 flex flex-col justify-center items-center">
+            <div class="w-full gap-3 flex flex-col justify-center items-start">
+                <h1 class="text-white text-left text-5xl font-sf-semibold capitalize tracking-wide">temukan UMKM yang kamu minati</h1>
+                <p class="w-130 text-gray-400 text-left text-base font-sf-regular tracking-wide">Ini dia daftar UMKM yang sesuai dengan kelasmu. Tentukan mana yang paling kamu minati dan dapatkan manfaatnya untuk belajarmu!</p>
+            </div>
+
+            <div class="w-full py-6 px-6 bg-white rounded-full flex justify-between items-center">
+                <div class="w-full px-8 gap-3 flex justify-center items-center">
+                    <i class="fa-solid fa-search text-xl text-zinc-400"></i>
+                    <input type="text" placeholder="Cari Nama Pekerjaan" class="w-full h-10 bg-transparent text-zinc-950 text-left text-lg font-sf-regular placeholder:text-zinc-400 focus:outline-none">
+                </div>
+                <div class="w-full gap-3 flex justify-center items-center">
+                    <i class="fa-regular fa-map text-xl text-zinc-400"></i>
+                    <input type="text" placeholder="Masukkan Lokasi Pekerjaan" class="w-full h-10 bg-transparent text-zinc-950 text-left text-lg font-sf-regular placeholder:text-zinc-400 focus:outline-none">
+                </div>
+                <button class="py-3 px-12 bg-primary rounded-full text-white text-center text-lg font-sf-medium tracking-wider capitalize transition-all duration-300 cursor-pointer" type="submit">cari</button>
+            </div>
+        </section>
+
+        <section class="w-full px-25 py-20 bg-white gap-10 flex flex-col justify-center items-center">
+            <div class="w-full gap-3 flex flex-col justify-center items-start">
+                <h1 class="text-primary-text text-left text-5xl font-sf-bold capitalize tracking-wide">rekomendasi <br>pekerjaan</h1>
+                <p class="w-160 text-hover-text text-left text-lg font-sf-regular tracking-wide">Temukan rekomendasi pekerjaan untuk kelas yang kamu ikuti, berikut riset pekerjaan untuk sertifikat kamu nantinya disini.</p>
+            </div>
+
+            <div class="w-full gap-20 flex justify-between items-start">
+                <div class="w-104 gap-12 flex justify-start items-start">
+                    <div class="gap-10 flex flex-col justify-center items-start">
+                        <div class="gap-5 flex flex-col justify-center items-start">
+                            <h3 class="text-primary-text text-left text-lg font-sf-bold tracking-wide capitalize">waktu pekerjaan</h3>
+                            <div class="gap-4 flex flex-col justify-center items-start">
+                                <div class="gap-2 flex justify-start items-center cursor-pointer">
+                                    <input type="checkbox" name="fullTime" id="fullTime" class="w-5 h-5 accent-primary cursor-pointer">
+                                    <label for="fullTime" class="text-primary-text text-base text-left font-sf-semibold capitalize tracking-wide cursor-pointer">full time</label>
+                                </div>
+                                <div class="gap-2 flex justify-start items-center cursor-pointer">
+                                    <input type="checkbox" name="partTime" id="partTime" class="w-5 h-5 accent-primary cursor-pointer">
+                                    <label for="partTime" class="text-primary-text text-base text-left font-sf-semibold capitalize tracking-wide cursor-pointer">part time</label>
+                                </div>
+                                <div class="gap-2 flex justify-start items-center cursor-pointer">
+                                    <input type="checkbox" name="volunteering" id="volunteering" class="w-5 h-5 accent-primary cursor-pointer">
+                                    <label for="volunteering" class="text-primary-text text-base text-left font-sf-semibold capitalize tracking-wide cursor-pointer">volunteering</label>
+                                </div>
+                                <div class="gap-2 flex justify-start items-center cursor-pointer">
+                                    <input type="checkbox" name="projectTime" id="projectTime" class="w-5 h-5 accent-primary cursor-pointer">
+                                    <label for="projectTime" class="text-primary-text text-base text-left font-sf-semibold capitalize tracking-wide cursor-pointer">project time</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gap-5 flex flex-col justify-center items-start">
+                            <h3 class="text-primary-text text-left text-lg font-sf-bold tracking-wide capitalize">jarak lokasi</h3>
+                            <div class="gap-4 flex flex-col justify-center items-start">
+                                <div class="gap-2 flex justify-start items-center cursor-pointer">
+                                    <input type="checkbox" name="jauh" id="jauh" class="w-5 h-5 accent-primary cursor-pointer">
+                                    <label for="jauh" class="text-primary-text text-base text-left font-sf-semibold capitalize tracking-wide cursor-pointer">jauh</label>
+                                </div>
+                                <div class="gap-2 flex justify-start items-center cursor-pointer">
+                                    <input type="checkbox" name="dekat" id="dekat" class="w-5 h-5 accent-primary cursor-pointer">
+                                    <label for="dekat" class="text-primary-text text-base text-left font-sf-semibold capitalize tracking-wide cursor-pointer">dekat</label>
+                                </div>
+                                <div class="gap-2 flex justify-start items-center cursor-pointer">
+                                    <input type="checkbox" name="sekitar" id="sekitar" class="w-5 h-5 accent-primary cursor-pointer">
+                                    <label for="sekitar" class="text-primary-text text-base text-left font-sf-semibold capitalize tracking-wide cursor-pointer">sekitar</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gap-5 flex flex-col justify-center items-start">
+                            <h3 class="text-primary-text text-left text-lg font-sf-bold tracking-wide capitalize">kategori pekerjaan</h3>
+                            <div class="gap-4 flex flex-col justify-center items-start">
+                                <div class="gap-2 flex justify-start items-center cursor-pointer">
+                                    <input type="checkbox" name="jauh" id="jauh" class="w-5 h-5 accent-primary cursor-pointer">
+                                    <label for="jauh" class="text-primary-text text-base text-left font-sf-semibold capitalize tracking-wide cursor-pointer">jauh</label>
+                                </div>
+                                <div class="gap-2 flex justify-start items-center cursor-pointer">
+                                    <input type="checkbox" name="dekat" id="dekat" class="w-5 h-5 accent-primary cursor-pointer">
+                                    <label for="dekat" class="text-primary-text text-base text-left font-sf-semibold capitalize tracking-wide cursor-pointer">dekat</label>
+                                </div>
+                                <div class="gap-2 flex justify-start items-center cursor-pointer">
+                                    <input type="checkbox" name="sekitar" id="sekitar" class="w-5 h-5 accent-primary cursor-pointer">
+                                    <label for="sekitar" class="text-primary-text text-base text-left font-sf-semibold capitalize tracking-wide cursor-pointer">sekitar</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="text-red-500 text-right text-lg font-sf-semibold capitalize tracking-wide cursor-pointer">clear all</button>
+                </div>
+
+                <div class="w-full gap-6 grid grid-cols-2 justify-center items-center">
+                    <div class="w-full p-5 border-2 border-zinc-400 rounded-2xl flex flex-col justify-center items-start">
+                        <div class="w-full gap-4 flex flex-col justify-center items-start">
+                            <div class="gap-1 flex flex-col justify-center items-start">
+                                <h3 class="text-primary-text text-left text-2xl font-sf-semibold capitalize tracking-wide">social media marketing</h3>
+                                <p class="text-primary-text text-left text-lg font-sf-regular capitalize tracking-wide">Kedai Kopi Nusantara  |  F&B</p>
+                            </div>
+
+                            <p class="w-full mb-3 pr-6 text-secondary-text text-left text-lg font-sf-regular tracking-wide">Membantu merancang strategi promosi digital di Instagram dan TikTok. Membuat caption, story, dan analisis hasil kampanye.</p>
+
+                            <div class="w-full gap-4 flex justify-start items-center">
+                                <span class="py-2 px-5 bg-amber-200 rounded-md text-orange-950 text-center text-sm font-sf-medium capitalize tracking-wide">jakarta barat</span>
+                                <span class="py-2 px-5 bg-cyan-200 rounded-md text-cyan-900 text-center text-sm font-sf-medium capitalize tracking-wide">Full-Time</span>
+                            </div>
+
+                            <div class="w-full pt-10 border-t-2 border-t-zinc-300 flex justify-between items-center">
+                                <span class="text-primary-text text-left text-2xl font-sf-semibold tracking-wide flex justify-center items-end">Rp 150.000 <span class="text-zinc-500 text-lg">/2hr</span></span>
+                                <i class="fa-regular fa-clock text-zinc-500 text-base"><span class="ml-1 text-right font-sf-semibold tracking-wide capitalize">10 hari yang lalu</span></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full p-5 border-2 border-zinc-400 rounded-2xl flex flex-col justify-center items-start">
+                        <div class="w-full gap-4 flex flex-col justify-center items-start">
+                            <div class="gap-1 flex flex-col justify-center items-start">
+                                <h3 class="text-primary-text text-left text-2xl font-sf-semibold capitalize tracking-wide">seller produk kecantikan</h3>
+                                <p class="text-primary-text text-left text-lg font-sf-regular capitalize tracking-wide">glowHerb beauty  |  beauty & health</p>
+                            </div>
+
+                            <p class="w-full mb-3 pr-6 text-secondary-text text-left text-lg font-sf-regular tracking-wide">Menjual produk skincare alami buatan lokal melalui media sosial atau WhatsApp. Dapat bonus penjualan setiap 10 produk.</p>
+
+                            <div class="w-full gap-4 flex justify-start items-center">
+                                <span class="py-2 px-5 bg-amber-200 rounded-md text-orange-950 text-center text-sm font-sf-medium capitalize tracking-wide">thamrin</span>
+                                <span class="py-2 px-5 bg-cyan-200 rounded-md text-cyan-900 text-center text-sm font-sf-medium capitalize tracking-wide">part-time</span>
+                                <span class="py-2 px-5 bg-green-300 rounded-md text-emerald-900 text-center text-sm font-sf-medium capitalize tracking-wide">remote</span>
+                            </div>
+
+                            <div class="w-full pt-10 border-t-2 border-t-zinc-300 flex justify-between items-center">
+                                <span class="text-primary-text text-left text-2xl font-sf-semibold tracking-wide flex justify-center items-end">Rp 250.000 <span class="text-zinc-500 text-lg">/2hr</span></span>
+                                <i class="fa-regular fa-clock text-zinc-500 text-base"><span class="ml-1 text-right font-sf-semibold tracking-wide capitalize">12 hari yang lalu</span></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full p-5 border-2 border-zinc-400 rounded-2xl flex flex-col justify-center items-start">
+                        <div class="w-full gap-4 flex flex-col justify-center items-start">
+                            <div class="gap-1 flex flex-col justify-center items-start">
+                                <h3 class="text-primary-text text-left text-2xl font-sf-semibold capitalize tracking-wide">data analysis</h3>
+                                <p class="text-primary-text text-left text-lg font-sf-regular capitalize tracking-wide">rumah sakit keluarga indonesia  |  health</p>
+                            </div>
+
+                            <p class="w-full mb-3 pr-6 text-secondary-text text-left text-lg font-sf-regular tracking-wide">Menganalisa data pemasukan pengeluaran kebutuhan rumah sakit. Menginput data <br><span class="text-white">teks kosong</span></p>
+
+                            <div class="w-full gap-4 flex justify-start items-center">
+                                <span class="py-2 px-5 bg-amber-200 rounded-md text-orange-950 text-center text-sm font-sf-medium capitalize tracking-wide">jakarta barat</span>
+                                <span class="py-2 px-5 bg-cyan-200 rounded-md text-cyan-900 text-center text-sm font-sf-medium capitalize tracking-wide">freelance</span>
+                                <span class="py-2 px-5 bg-green-300 rounded-md text-emerald-900 text-center text-sm font-sf-medium capitalize tracking-wide">on site</span>
+                            </div>
+
+                            <div class="w-full pt-10 border-t-2 border-t-zinc-300 flex justify-between items-center">
+                                <span class="text-primary-text text-left text-2xl font-sf-semibold tracking-wide flex justify-center items-end">Rp 170.000 <span class="text-zinc-500 text-lg">/2hr</span></span>
+                                <i class="fa-regular fa-clock text-zinc-500 text-base"><span class="ml-1 text-right font-sf-semibold tracking-wide capitalize">9 hari yang lalu</span></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full p-5 border-2 border-zinc-400 rounded-2xl flex flex-col justify-center items-start">
+                        <div class="w-full gap-4 flex flex-col justify-center items-start">
+                            <div class="gap-1 flex flex-col justify-center items-start">
+                                <h3 class="text-primary-text text-left text-2xl font-sf-semibold capitalize tracking-wide">marketing office rumah</h3>
+                                <p class="text-primary-text text-left text-lg font-sf-regular capitalize tracking-wide">PT. greenhouse indonesia  |  building</p>
+                            </div>
+
+                            <p class="w-full mb-3 pr-6 text-secondary-text text-left text-lg font-sf-regular tracking-wide">Merancang strategi komprehensif untuk memaksimalkan penjualan serta mempercepat perputaran properti.</p>
+
+                            <div class="w-full gap-4 flex justify-start items-center">
+                                <span class="py-2 px-5 bg-amber-200 rounded-md text-orange-950 text-center text-sm font-sf-medium capitalize tracking-wide">jakarta barat</span>
+                                <span class="py-2 px-5 bg-cyan-200 rounded-md text-cyan-900 text-center text-sm font-sf-medium capitalize tracking-wide">part-time</span>
+                                <span class="py-2 px-5 bg-green-300 rounded-md text-emerald-900 text-center text-sm font-sf-medium capitalize tracking-wide">on site</span>
+                            </div>
+
+                            <div class="w-full pt-10 border-t-2 border-t-zinc-300 flex justify-between items-center">
+                                <span class="text-primary-text text-left text-2xl font-sf-semibold tracking-wide flex justify-center items-end">Rp 230.000 <span class="text-zinc-500 text-lg">/2hr</span></span>
+                                <i class="fa-regular fa-clock text-zinc-500 text-base"><span class="ml-1 text-right font-sf-semibold tracking-wide capitalize">7 hari yang lalu</span></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full p-5 border-2 border-zinc-400 rounded-2xl flex flex-col justify-center items-start">
+                        <div class="w-full gap-4 flex flex-col justify-center items-start">
+                            <div class="gap-1 flex flex-col justify-center items-start">
+                                <h3 class="text-primary-text text-left text-2xl font-sf-semibold capitalize tracking-wide">produk marketing</h3>
+                                <p class="text-primary-text text-left text-lg font-sf-regular capitalize tracking-wide">restoran seindonesia  |  F&B</p>
+                            </div>
+
+                            <p class="w-full mb-3 pr-6 text-secondary-text text-left text-lg font-sf-regular tracking-wide">Menghubungkan antara tim pengembangan produk untuk memastikan produk yang dikembangkan dapat dikenal dan diminati.</p>
+
+                            <div class="w-full gap-4 flex justify-start items-center">
+                                <span class="py-2 px-5 bg-amber-200 rounded-md text-orange-950 text-center text-sm font-sf-medium capitalize tracking-wide">palmerah</span>
+                                <span class="py-2 px-5 bg-cyan-200 rounded-md text-cyan-900 text-center text-sm font-sf-medium capitalize tracking-wide">part-time</span>
+                                <span class="py-2 px-5 bg-green-300 rounded-md text-emerald-900 text-center text-sm font-sf-medium capitalize tracking-wide">on site</span>
+                            </div>
+
+                            <div class="w-full pt-10 border-t-2 border-t-zinc-300 flex justify-between items-center">
+                                <span class="text-primary-text text-left text-2xl font-sf-semibold tracking-wide flex justify-center items-end">Rp 190.000 <span class="text-zinc-500 text-lg">/2hr</span></span>
+                                <i class="fa-regular fa-clock text-zinc-500 text-base"><span class="ml-1 text-right font-sf-semibold tracking-wide capitalize">4 hari yang lalu</span></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full p-5 border-2 border-zinc-400 rounded-2xl flex flex-col justify-center items-start">
+                        <div class="w-full gap-4 flex flex-col justify-center items-start">
+                            <div class="gap-1 flex flex-col justify-center items-start">
+                                <h3 class="text-primary-text text-left text-2xl font-sf-semibold capitalize tracking-wide">seller host live</h3>
+                                <p class="text-primary-text text-left text-lg font-sf-regular capitalize tracking-wide">heart2Glow beauty  |  skincare</p>
+                            </div>
+
+                            <p class="w-full mb-3 pr-6 text-secondary-text text-left text-lg font-sf-regular tracking-wide">Mempromosikan produk kami, secara live social media dan membuat engagement untuk mendorong penjualan.</p>
+
+                            <div class="w-full gap-4 flex justify-start items-center">
+                                <span class="py-2 px-5 bg-amber-200 rounded-md text-orange-950 text-center text-sm font-sf-medium capitalize tracking-wide">gambir</span>
+                                <span class="py-2 px-5 bg-cyan-200 rounded-md text-cyan-900 text-center text-sm font-sf-medium capitalize tracking-wide">Full-Time</span>
+                                <span class="py-2 px-5 bg-green-300 rounded-md text-emerald-900 text-center text-sm font-sf-medium capitalize tracking-wide">on site</span>
+                            </div>
+
+                            <div class="w-full pt-10 border-t-2 border-t-zinc-300 flex justify-between items-center">
+                                <span class="text-primary-text text-left text-2xl font-sf-semibold tracking-wide flex justify-center items-end">Rp 200.000 <span class="text-zinc-500 text-lg">/2hr</span></span>
+                                <i class="fa-regular fa-clock text-zinc-500 text-base"><span class="ml-1 text-right font-sf-semibold tracking-wide capitalize">2 hari yang lalu</span></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full flex flex-col justify-center items-center">
+        <div class="w-full px-25 py-8 border-y-2 border-y-gray-300 gap-10 flex flex-col justify-center items-center">
+            <div class="w-full gap-2 flex justify-start items-center">
+                <a href="#" class="text-primary-text text-left text-2xl font-sf-black uppercase gap-0.5 flex justify-start items-center">
+                    <img src="../assets/images/jobskill-icon.svg" alt="jobskill-icon" class="w-4 h-auto max-w-full">
+                    obskill
+                </a>
+            </div>
+
+            <div class="w-full pr-20 flex justify-between items-start">
+                <div class="gap-4 flex flex-col justify-center items-start">
+                    <p class="w-72 text-secondary-text text-left text-lg font-sf-medium">Jl. Simprug Golf 8 No.6, RT.2/RW.8, Grogol Sel., Kec. Kby. Lama, South Jakarta City, Special Capital Region of Jakarta 12220</p>
+                    <a href="#" class="text-green-600 text-left text-xl font-sf-medium underline capitalize">see on map</a>
+                    <div class="gap-2 flex flex-col justify-center items-start">
+                        <a href="mailto:@jobskill" class="text-zinc-500 text-xl text-left font-sf-medium"><i class="fa-solid fa-envelope mr-2"></i> @jobskill</a>
+                        <a href="wa.me/+6286674727400" class="text-zinc-500 text-xl text-left font-sf-medium"><i class="fa-brands fa-whatsapp mr-2"></i> +62 866-7472-7400</a>
+                    </div>
+                </div>
+
+                <div class="w-max gap-30 flex justify-center items-start">
+                    <div class="gap-3 flex flex-col justify-center items-start">
+                        <a href="#" class="text-zinc-950 text-left text-xl font-semibold capitalize tracking-wide">jobskill</a>
+                        <a href="#" class="text-zinc-950 text-left text-xl font-regular capitalize tracking-wide">career</a>
+                        <a href="#" class="text-zinc-950 text-left text-xl font-regular capitalize tracking-wide">about us</a>
+                        <a href="#" class="text-zinc-950 text-left text-xl font-regular capitalize tracking-wide">partner</a>
+                        <a href="#" class="text-zinc-950 text-left text-xl font-regular capitalize tracking-wide">blog</a>
+                    </div>
+                    <div class="gap-3 flex flex-col justify-center items-start">
+                        <a href="#" class="text-zinc-950 text-left text-xl font-semibold capitalize tracking-wide">services</a>
+                        <a href="#" class="text-zinc-950 text-left text-xl font-regular capitalize tracking-wide">class</a>
+                        <a href="#" class="text-zinc-950 text-left text-xl font-regular capitalize tracking-wide">scholarship</a>
+                        <a href="#" class="text-zinc-950 text-left text-xl font-regular capitalize tracking-wide">challenge</a>
+                        <a href="#" class="text-zinc-950 text-left text-xl font-regular capitalize tracking-wide">skillPath</a>
+                    </div>
+                    <div class="gap-3 flex flex-col justify-center items-start">
+                        <a href="#" class="text-zinc-950 text-left text-xl font-semibold capitalize tracking-wide">help and guidance</a>
+                        <a href="#" class="text-zinc-950 text-left text-xl font-regular capitalize tracking-wide">terms and conditions</a>
+                        <a href="#" class="text-zinc-950 text-left text-xl font-regular capitalize tracking-wide">privacy policy</a>
+                        <a href="#" class="text-zinc-950 text-left text-xl font-regular capitalize tracking-wide">help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w-full px-25 py-6 flex justify-start items-center">
+            <p class="w-full text-left text-lg text-secondary-text font-sf-regular uppercase">&copy; 2015 - 2025, pt techno education</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
