@@ -19,6 +19,7 @@ function DigitalOnline() {
     localStorage.setItem("courseImage2", "../assets/images/detail-dua.png");
     localStorage.setItem("courseImage3", "../assets/images/detail-tiga.png");
     localStorage.setItem("courseImage4", "../assets/images/detail-empat.png");
+    localStorage.setItem("sertifikat", "../assets/images/sertifikat-digital-online.png");
 }
 
 function SosmedMarketing() {
@@ -41,6 +42,7 @@ function SosmedMarketing() {
     localStorage.setItem("courseImage2", "../assets/images/image_2.png");
     localStorage.setItem("courseImage3", "../assets/images/image_3.png");
     localStorage.setItem("courseImage4", "../assets/images/image_4.png");
+    localStorage.setItem("sertifikat", "../assets/images/sertifikat-sosmed-marketing.png");
 }
 
 function MarketingOffice() {
@@ -63,6 +65,7 @@ function MarketingOffice() {
     localStorage.setItem("courseImage2", "../assets/images/2image_2.png");
     localStorage.setItem("courseImage3", "../assets/images/2image_3.png");
     localStorage.setItem("courseImage4", "../assets/images/2image_4.png");
+    localStorage.setItem("sertifikat", "../assets/images/sertifikat-marketing-office.png");
 }
 
 function contentLoaded() {
@@ -79,6 +82,7 @@ function contentLoaded() {
     const image2 = document.getElementById("courseImage2");
     const image3 = document.getElementById("courseImage3");
     const image4 = document.getElementById("courseImage4");
+    const sertifikat = document.getElementById("sertifikat");
 
     const savedTitle = localStorage.getItem("courseTitle");
     const savedBanner = localStorage.getItem("courseBanner");
@@ -93,6 +97,7 @@ function contentLoaded() {
     const savedImage2 = localStorage.getItem("courseImage2");
     const savedImage3 = localStorage.getItem("courseImage3");
     const savedImage4 = localStorage.getItem("courseImage4");
+    const savedSertifikat = localStorage.getItem("sertifikat");
 
     title.innerText = savedTitle;
     banner.src = savedBanner;
@@ -106,4 +111,21 @@ function contentLoaded() {
     image2.src = savedImage2;
     image3.src = savedImage3;
     image4.src = savedImage4;
+    sertifikat.src = savedSertifikat;
 }
+
+function openCertificate() {
+  const savedSertifikat = localStorage.getItem("sertifikat");
+  localStorage.setItem("currentCertificate", savedSertifikat);
+}
+
+function sertifikat() {
+  const certificateImg = document.getElementById("certificateImage");
+  const downloadLink = document.getElementById("download-e-sertifikat");
+
+  const currentCertificate = localStorage.getItem("currentCertificate");
+  
+  certificateImg.src = currentCertificate;
+  downloadLink.href = currentCertificate;
+  certificateImg.alt = "Sertifikat-Kursus-Jobskill";
+};

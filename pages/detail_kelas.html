@@ -8,6 +8,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
@@ -27,13 +28,12 @@
                 <a href="../index.html" class="text-gray-300 text-lg text-center font-sf-medium capitalize tracking-wider">beranda</a>
                 <a href="#" class="text-white text-lg text-center font-sf-medium capitalize tracking-wider">belajar</a>
                 <a href="#" class="text-gray-300 text-lg text-center font-sf-medium capitalize tracking-wider">portfolio</a>
-                <a href="intern.html" class="text-gray-300 text-lg text-center font-sf-medium capitalize tracking-wider">cari proyek</a>
+                <a href="intern.html" class="text-gray-300 text-lg text-center font-sf-medium capitalize tracking-wider">tantangan proyek</a>
                 <a href="#" class="text-gray-300 text-lg text-center font-sf-medium capitalize tracking-wider">tentang kami</a>
             </div>
 
             <div class="gap-4 flex justify-center items-center">
-                <a href="#" class="py-2 px-7 bg-transparent hover:bg-white rounded-lg border-2 border-transparent hover:border-white text-gray-300 hover:text-background text-center text-lg font-sf-medium tracking-wider capitalize transition-all duration-300">daftar</a>
-                <a href="#" class="py-2 px-7 bg-primary hover:bg-transparent rounded-lg border-2 border-primary text-white hover:text-primary text-center text-lg font-sf-medium tracking-wider capitalize transition-all duration-300">masuk</a>
+                <a href="#" class="py-2 px-6 bg-background border-2 border-zinc-300 rounded-md text-white text-left text-2xl font-sf-medium capitalize gap-3 flex justify-center items-center"><span class="w-10 h-10 bg-primary rounded-full text-white text-xl font-sf-bold uppercase flex justify-center items-center">f</span>fatir</a>
             </div>
         </nav>
     </header>
@@ -140,7 +140,12 @@
 
                 <div class="w-full py-10 px-8 bg-white border-2 border-zinc-400 rounded-3xl gap-6 flex flex-col justify-start items-center">
                     <h2 class="w-full text-primary-text text-left text-2xl font-sf-bold capitalize tracking-wide">sertifikat</h2>
-                    <img src="../assets/images/sertifikat-digital-online.png" alt="sertifikat-digital-online" class="w-full h-auto max-w-full rounded-md">
+                    <div class="w-full h-auto border-2 border-zinc-400 rounded-lg overflow-hidden relative flex justify-center items-center group">
+                        <a href="sertifikat.html" onclick="openCertificate()" class="w-full h-auto flex justify-center items-center">
+                            <p class="w-full h-full py-2 bg-black/60 backdrop-blur-[2px] absolute text-white text-center text-2xl tracking-wider capitalize invisible group-hover:visible flex justify-center items-center transition-all duration-200">download <br>sertifikat</p>
+                            <img id="sertifikat" src="../assets/images/sertifikat-digital-online.png" alt="sertifikat-kelas-jobskill" class="w-full h-auto max-w-full">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -196,5 +201,7 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
